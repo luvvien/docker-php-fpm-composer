@@ -8,5 +8,4 @@ RUN apt-get update && apt-get install -y locales git curl wget libmagickwand-dev
     && chmod a+x composer.phar && mv composer.phar /usr/local/bin/composer \
     && composer self-update \
 
-    && rm -rf /var/lib/apt/lists/* \
-    && rm installer
+    && rm -rf /var/lib/apt/lists/*
