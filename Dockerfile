@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y locales git curl wget libmagickwand-dev
     && composer self-update \
 
     && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
-    && apt-get install -y nodejs \
+    && apt-get install -y nodejs --fix-missing \
 
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
